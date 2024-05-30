@@ -1,0 +1,435 @@
+
+/*
+
+CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Lexend+Deca:wght@100..900&display=swap');
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #DFDFDF;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+
+a,
+button {
+	color: #1696e7;
+	outline: none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {  
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #000000;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 23px;
+	color: #000000;
+}
+a{
+    outline: none !important;
+    text-decoration: none;
+}
+
+hr {
+	border-bottom: 2px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+.btn {
+	background: #5F5F5F;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 12px 25px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+    font-family: "Lalezar", system-ui;
+    border: 3px solid #A9A9A9;
+    border-radius: 9px;
+}
+
+.btn:hover{
+    background-color: #908686;
+    color: #ffffff;
+}
+.section-bg{
+    background-color: #2E2E2E;
+}
+
+.container-fluid{
+	max-width: 1700px;
+}
+.hero-area{
+    color: #fff !important;
+}
+.hero-btn .btn:hover{
+    background-color: #9f9292;
+    color: #312f2f;
+}
+.hero-btn .btn {
+	background: #5F5F5F;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 6px 40px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+    font-family: "Lalezar", system-ui;
+    border: none;
+    border-radius: 9px;
+}
+.hero-btn{
+    text-align: right;
+}
+.hero-content a img {
+	margin-right: 10px;
+}
+.hero-content a {
+	color: #717171;
+}
+.hero-content a.btn {
+	color: #fff;
+}
+.hero-right-img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.hero-area {
+	box-shadow: 0px 15px 35px #373636;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.smooth-content p {
+	width: 536px;
+	text-align: center;
+	margin: 0 auto;
+}
+.welcome-content {
+	width: 479px;
+	float: right;
+}
+.welcome-content p {
+	text-align: justify;
+}
+.welcome-img img {
+	margin-left: 45px !important;
+}
+.trust-img img {
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+.trust-img img:last-child {
+    margin-right: 0;
+}
+.trust-area a .fa-solid.fa-angle-down {
+	color: #fff;
+}
+.trust-area p{
+    margin-bottom: 0;
+}
+.trust-box {
+	padding: 26px;
+	border-radius: 9px;
+	box-shadow: 0px -9px 32px #B2B2B2;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.specialties-content {
+	width: 490px;
+	float: right;
+}
+.specialties-content p {
+	text-align: justify;
+}
+.specialties-img img {
+	margin-left: 74px !important;
+}
+.guarantee-content {
+	width: 564px;
+	float: right;
+}
+.guarantee-img img {
+	margin-left: 74px !important;
+}
+.guarantee-content p {
+	width: 535px;
+	text-align: justify;
+}
+.screedcon-content h1 {
+	color: #fff;
+	font-size: 28px;
+	z-index: 999;
+}
+.screedcon-area {
+	background: #3C3B3B;
+}
+
+.screedcon-main-area {
+	position: relative;
+}
+.screedcon-area {
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 98px;
+	background-size: cover;
+}
+.screedcon-img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.screedcon-logo {
+	position: absolute;
+	z-index: 1;
+	top: 36%;
+	transform: translateY(-50%);
+	right: 64px;
+}
+.shape {
+	position: relative;
+	float: right;
+}
+.shape h1 {
+	position: absolute;
+	top: 0;
+	font-size: 28px;
+	color: #fff;
+	margin-left: 60px;
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+.testamonials-img {
+	margin-left: 158px;
+}
+.testamonials-img-content {
+	margin-left: 12px;
+}
+.midil.testamonials-img {
+	margin-left: 158px;
+}
+.peragrap p {
+	font-size: 24px;
+    line-height: 30px;
+}
+.testamonials-content.second p {
+	margin-left: 160px;
+    width: 525px;
+}
+.testamonials-content p {
+	width: 513px;
+	text-align: justify;
+	margin-left: 80px;
+}
+.testamonials-content.second{
+    position: relative;
+}
+.testamonials-content.second img.text-right {
+	position: absolute;
+	right: -25px;
+	top: -30px;
+}
+.testamonials-content.last p {
+    font-size: 26px;
+    line-height: 32px;
+}
+.footer-item-text a {
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: 200;
+}
+.footer-area {
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.footer-item-text h2 {
+	font-family: "Lalezar", system-ui;
+	font-size: 20px;
+	color: #fff;
+}
+.footer-title h1 {
+	color: #fff;
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+.footer-menu ul li a {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 200;
+}
+.footer-menu ul li {
+	padding: 14px 0;
+}
+.footer-menu.f-left {
+	margin-left: 150px;
+}
+.footer-logo img {
+	width: 100%;
+}
+.hero-content p {
+	width: 444px;
+}
