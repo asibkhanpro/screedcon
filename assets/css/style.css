@@ -201,7 +201,9 @@ label {
     border: 3px solid #A9A9A9;
     border-radius: 9px;
 }
-
+.hero-content h1 {
+	font-size: 75px;
+}
 .btn:hover{
     background-color: #908686;
     color: #ffffff;
@@ -252,11 +254,15 @@ label {
 	right: 0;
 	bottom: 0;
 }
+.logo img {
+	width: 35%;
+}
 .hero-area {
 	box-shadow: 0px 15px 35px #373636;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	padding-bottom: 100px;
 }
 .smooth-content p {
 	width: 536px;

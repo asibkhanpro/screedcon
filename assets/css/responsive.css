@@ -18,6 +18,9 @@
         font-size: 14px;
         margin-bottom: 10px;
     }
+    .hero-content h1 {
+        font-size: 64px;
+    }
 }
 
 
@@ -304,6 +307,7 @@
     .hero-content p {
         width: auto;
         margin: 0 auto;
+        font-size: 18px;
     }
     .smooth-content p {
         width: 100%;
@@ -349,10 +353,9 @@
     }
     .testamonials-content.second img.text-right {
         position: absolute;
-        right: -45px;
-        top: -10px;
+        top: -25px;
         width: 8%;
-        right: -25px;
+        right: -30px;
     }
     .testamonials-content.last{
         position: relative;
@@ -493,6 +496,10 @@
         font-size: 15px;
         line-height: 23px;
     }
+    .hero-content h1 {
+        font-size: 35px !important;
+    }
+    
 }
 
 
